@@ -1,0 +1,5 @@
+select e.Email
+from
+(select Email,count(Id)as num from Person group by Email)
+as e
+where e.num>=2
