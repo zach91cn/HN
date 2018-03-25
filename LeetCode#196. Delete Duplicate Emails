@@ -1,0 +1,6 @@
+delete e1
+from Person as e1,Person as e2
+where e1.Email=e2.Email 
+and e1.Id> e2.Id
+
+another solution:
