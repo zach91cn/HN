@@ -1,0 +1,5 @@
+select c1.class 
+from
+(select class, count(distinct student)as number from courses group by class ) 
+as c1
+where c1.number >=5
