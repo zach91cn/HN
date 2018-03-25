@@ -1,0 +1,6 @@
+select w.Id as Id
+from Weather 
+join Weather as w 
+on
+DATEDIFF(w.date,weather.date)=1
+and w.temperature>Weather.temperature
